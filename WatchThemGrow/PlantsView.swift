@@ -9,8 +9,31 @@ import SwiftUI
 
 struct PlantsView: View {
 	var body: some View {
-		Text("Plants")
-			.padding()
+		ScrollView {
+			
+			VStack{
+				Text("My Plants")
+					.font(.title)
+				Image("limoviikuna")
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(width: 300)
+					.cornerRadius(20)
+				Text("Limoviikuna")
+				Image("kilpipiilea")
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(width: 300)
+					.cornerRadius(20)
+				Text("Kilpipiilea")
+				Image("yucca")
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(width: 300)
+					.cornerRadius(20)
+				Text("Yucca")
+			}
+		}
 	}
 }
 
